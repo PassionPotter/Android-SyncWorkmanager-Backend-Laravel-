@@ -10,7 +10,7 @@ class Personel extends Model
     use HasFactory;
     protected $table = "personel";
     protected $fillable = [
-        'week', 'date', 'n_workers_day', 'n_workers_night'
+        'week', 'date', 'n_workers_day', 'n_workers_night', 'projectID'
     ];
 
 }

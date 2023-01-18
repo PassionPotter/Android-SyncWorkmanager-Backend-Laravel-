@@ -10,7 +10,7 @@ class Trazability extends Model
     use HasFactory;
     protected $table = "trazability";
     protected $fillable = [
-        'wtg', 'component_type', 'serial_number', 'photo', 'comments'
+        'wtg', 'component_type', 'serial_number', 'photo', 'comments', 'projectID'
     ];
 
 }

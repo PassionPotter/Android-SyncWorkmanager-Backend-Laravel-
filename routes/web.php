@@ -24,4 +24,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('companies', \App\Http\Controllers\CompanyController::class);
     Route::resource('subcontractors', \App\Http\Controllers\SubContractorController::class);
     Route::resource('wtgtype', \App\Http\Controllers\WTGTypeController::class);
+    Route::resource('component', \App\Http\Controllers\ComponentController::class);
+    Route::resource('phase', \App\Http\Controllers\PhaseController::class);
 });

@@ -10,7 +10,7 @@ class DailyStatus extends Model
     use HasFactory;
     protected $table = "handwork_daily_status";
     protected $fillable = [
-        'date', 'total_employee', 'departure_time', 'entry_time'
+        'date', 'total_employee', 'departure_time', 'entry_time', 'projectID'
     ];
 
 }

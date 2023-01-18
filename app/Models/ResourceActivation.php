@@ -10,7 +10,7 @@ class ResourceActivation extends Model
     use HasFactory;
     protected $table = "resource_activation";
     protected $fillable = [
-        'description', 'model_name', 'company', 'arrival_date', 'ready_to_work', 'comments'
+        'description', 'model_name', 'company', 'arrival_date', 'ready_to_work', 'comments', 'projectID'
     ];
 
 }

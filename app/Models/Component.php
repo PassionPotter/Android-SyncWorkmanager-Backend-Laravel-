@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Task extends Model
+class Component extends Model
 {
     use HasFactory;
-    protected $table = "tasks";
+
+    protected $table = "components";
+    
     protected $fillable = [
-        'projectID', 'WTGID', 'status', 'number_workers', 'serial_number', 'shift_option','comments', 'taskID'
+        'name'
     ];
 
 }

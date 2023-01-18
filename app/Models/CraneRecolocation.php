@@ -11,7 +11,7 @@ class CraneRecolocation extends Model
     protected $table = "crane_recolocation";
     protected $fillable = [
         'movement_from', 'movement_to', 'crane_type', 'distance', 'assemble_option','start_date', 'start_hour', 'end_date', 'end_hour', 'total_hours',
-        'hours_contract', 'hours_excess', 'hours_standby', 'hours_not_standby', 'comments'
+        'hours_contract', 'hours_excess', 'hours_standby', 'hours_not_standby', 'comments', 'projectID'
     ];
 
 }

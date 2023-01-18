@@ -20,6 +20,10 @@ use App\Http\Controllers\Api\CraneDailyStatusController;
 use App\Http\Controllers\Api\InefficienciesController;
 use App\Http\Controllers\Api\CraneInefficienciesController;
 use App\Http\Controllers\Api\TrazabilityController;
+use App\Http\Controllers\Api\CraneTrazabilityController;
+use App\Http\Controllers\Api\ComponentController;
+use App\Http\Controllers\Api\PhaseController;
+use App\Http\Controllers\Api\OTS1Controller;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -48,10 +52,15 @@ Route::post('crane-daily-status',[CraneDailyStatusController::class, 'save']);
 Route::post('inefficiencies',[InefficienciesController::class, 'save']);
 Route::post('crane-inefficiencies',[CraneInefficienciesController::class, 'save']);
 Route::post('trazability',[TrazabilityController::class, 'save']);
+Route::post('crane-trazability',[CraneTrazabilityController::class, 'save']);
+Route::post('ots1',[OTS1Controller::class, 'save']);
 //GET URL
 Route::get('fetchCompany', [CompanyController::class, 'getList']);
 Route::get('fetchWTGType', [WTGTypeController::class, 'getList']);
 Route::get('fetchSubContractor', [SubContractorController::class, 'getList']);
+Route::get('fetchComponent', [ComponentController::class, 'getList']);
+Route::get('fetchPhase', [PhaseController::class, 'getList']);
+
 Route::get('wtgs', [WTGController::class, 'getList']);
 Route::get('fetchCrane', [CraneController::class, 'getList']);
 Route::get('fetchProject', [ProjectController::class, 'getList']);
@@ -61,3 +70,5 @@ Route::get('fetchCtrazabilityraneTask', [CraneTaskController::class, 'getList'])
 Route::get('fetchInefficiencies',[InefficienciesController::class, 'getList']);
 Route::get('fetchCraneInefficiencies',[CraneInefficienciesController::class, 'getList']);
 Route::get('fetchTrazability',[TrazabilityController::class, 'getList']);
+Route::get('crane-fetchTrazability',[CraneTrazabilityController::class, 'getList']);
+Route::get('fetchots1',[OTS1Controller::class, 'getList']);

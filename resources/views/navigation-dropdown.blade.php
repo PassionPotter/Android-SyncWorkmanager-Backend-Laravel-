@@ -45,6 +45,20 @@
                     </x-jet-nav-link>
                 </div>
                 @endcan
+                @can('component_access')
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('component.index') }}" :active="request()->routeIs('component.*')">
+                        Components
+                    </x-jet-nav-link>
+                </div>
+                @endcan
+                @can('phase_access')
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('phase.index') }}" :active="request()->routeIs('phase.*')">
+                        Phase
+                    </x-jet-nav-link>
+                </div>
+                @endcan
             </div>
 
             <!-- Settings Dropdown -->

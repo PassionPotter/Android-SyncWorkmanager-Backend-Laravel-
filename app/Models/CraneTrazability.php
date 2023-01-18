@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Task extends Model
+class CraneTrazability extends Model
 {
     use HasFactory;
-    protected $table = "tasks";
+    protected $table = "crane_trazability";
     protected $fillable = [
-        'projectID', 'WTGID', 'status', 'number_workers', 'serial_number', 'shift_option','comments', 'taskID'
+        'wtg', 'component_type', 'serial_number', 'photo', 'comments', 'projectID'
     ];
 
 }

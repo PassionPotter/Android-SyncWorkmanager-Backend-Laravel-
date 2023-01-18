@@ -10,7 +10,7 @@ class CraneInefficiencies extends Model
     use HasFactory;
     protected $table = "crane_inefficiencies";
     protected $fillable = [
-        'date', 'project', 'wtg', 'hours','responsible','validated','cause','subcause','justification','crane_type','shift_option','partial_time'
+        'date', 'project', 'wtg', 'hours','responsible','validated','cause','subcause','justification','crane_type','shift_option','partial_time', 'taskID'
     ];
 
 }

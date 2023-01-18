@@ -10,7 +10,7 @@ class Inefficiencies extends Model
     use HasFactory;
     protected $table = "inefficiencies";
     protected $fillable = [
-        'date', 'project', 'wtg', 'hours','responsible','validated','cause','subcause','justification','n_workers','shift_option','partial_time'
+        'date', 'project', 'wtg', 'hours','responsible','validated','cause','subcause','justification','n_workers','shift_option','partial_time','taskID'
     ];
 
 }
